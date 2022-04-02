@@ -1,0 +1,57 @@
+.options {
+  padding: 10px;
+  background: #faf;
+  display: inline-block;
+}
+
+.options .option {
+  width: 100px;
+  list-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  float: left;
+  text-align: center;
+  border: 1px solid #000;
+  background: #b6ff00;
+  box-sizing: border-box;
+}
+
+.options .option:first-child {
+  margin-left: 0;
+}
+
+/*Стили для планшета*/
+@media (min-width: 381px) and (max-width: 560px) {
+  .options {
+    padding-bottom: 0;
+  }
+
+  .options .option {
+    margin-bottom: 10px;
+    width: 140px;
+  }
+
+  .options .option:nth-child(3) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
+/*Стили для телефона*/
+@media (max-width: 380px) {
+  .options {
+    display: block;
+    min-width: 250px;
+  }
+
+  .options .option {
+    margin-top: 10px;
+    margin-left: 0;
+    float: none;
+    width: 92%;
+  }
+
+  .options .option:first-child {
+    margin-top: 0;
+  }
+}
